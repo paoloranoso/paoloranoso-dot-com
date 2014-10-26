@@ -89,12 +89,12 @@ body {
 
 /* Headings and icons */
 #secondHeading{
-	animation-delay: 0.5s;
+	animation-delay: 1s;
 }
 
 #icons{
 	font-size: 40px;
-	animation-delay: 1s;
+	animation-delay: 2s;
 }
 
 #icons a{
