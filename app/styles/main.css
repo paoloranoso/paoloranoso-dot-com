@@ -2,13 +2,14 @@ html,
 body {
   height: 100%;
   background-color: #9900ff;
+  /*background: url("/images/sunset.jpg") #9900ff no-repeat center center fixed;  <--- TODO: Uncomment this when we want to use a pic instead */
   background-image: linear-gradient(92deg,#99ffff,#9900ff);
-  /*animation: hue 5s infinite linear;*/
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	animation: hue 5s infinite linear;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -104,4 +105,17 @@ body {
 
 #icons a:hover, #icons a:focus{
 	color: #99ffff;
+}
+
+
+
+/* Keyframe stuff for cool changing background colors */
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(-360deg);
+  }
 }
